@@ -1,4 +1,83 @@
-:root 
-{
---blue: #00b; // or any global you wish to share with components 
+// Imports:
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+// Global Variables:
+$color1: #FA2759;
+$color2: #2DFCD8;
+$color3: #1A1A1A;
+$color4: #000000;
+
+$spaceS: 12px;
+$spaceXS: 24px;
+$spaceM: 40px;
+$spaceL: 54px;
+$spaceXL: 60px;
+$spaceXXL: 105px;
+
+
+
+// General Styling:
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  background-color: $color4;
+  margin: 0;
 }
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.primary-button {
+  cursor: pointer;
+  border: solid 1px $color2;
+  background-color: transparent;
+  color: $color2;
+  &:hover {
+    background-color: $color2;
+    color: white;
+  }
+  &:disabled {
+    border: none;
+    background-color:  #2dfcd929;
+    color: rgba(255, 255, 255, 0.623);
+  }
+}
+
+.secondary-button {
+  cursor: pointer;
+  border: solid 1px $color1;
+  background-color: transparent;
+  color: $color2;
+  &:hover {
+    background-color: $color1;
+    color: white;
+  }
+  &:disabled {
+    border: none;
+    background-color:  #2dfcd929;
+    color: rgba(255, 255, 255, 0.623);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

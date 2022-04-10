@@ -1,6 +1,14 @@
-div{
-  width: 100px;
-  height: 100px;
-  background-color: var(--blue);
+// @use funktioniert genauso wie @import, d.h. es wird verwendet, um eine andere SCSS Datei einzubinden.
+// Der Unterschied kommt daher, dass @import alle Variablen, Mixings, u.s.w. global verfügbar macht und 
+// daher nicht mehr verwendet werden sollte. Bei @use ist das nicht mehr der Fall: Alle Objekte werden 
+// als Modul nur für diese Datei eingebunden und müssen daher über ein Präfix aufgerufen werden, in diesem
+// Fall wurde einfach der Buchstabe s verwendet. Dies kann natürlich beliebig angepasst werden, indem ein
+// anderer Wert nach dem 'as' übergeben wird: 
+@use '../styles.scss' as *;
+// Das Präfix ist natürlich nur für Variablen, Mixings u.s.w. notwendig, die Stylings (Selektor + Content)
+// werden natürlich automatisch importiert!
 
+button {
+  width: 120px;
+  height: 40px;
 }
