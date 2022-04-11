@@ -1,8 +1,8 @@
 @use '../../styles.scss' as *;
 
 .container {
-  padding: $spaceS $spaceXXL $spaceS $spaceXXL;
   @include flex(space-between, center);
+  padding: $spaceS $spaceXXL $spaceS $spaceXXL;
   img{
     width: 25px;
     height: 25px;
