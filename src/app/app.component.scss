@@ -4,11 +4,7 @@
 // als Modul nur für diese Datei eingebunden und müssen daher über ein Präfix aufgerufen werden, in diesem
 // Fall wurde einfach der Buchstabe s verwendet. Dies kann natürlich beliebig angepasst werden, indem ein
 // anderer Wert nach dem 'as' übergeben wird: 
-@use '../styles.scss' as *;
+@use '../styles.scss' as *; // Wenn as * importiert wird, heißt dass das kein Präfix benötigt wird!
 // Das Präfix ist natürlich nur für Variablen, Mixings u.s.w. notwendig, die Stylings (Selektor + Content)
 // werden natürlich automatisch importiert!
 
-button {
-  width: 120px;
-  height: 40px;
-}

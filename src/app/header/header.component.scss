@@ -1,0 +1,23 @@
+@use '../../styles.scss' as *;
+
+.container {
+  padding: $spaceS $spaceXXL $spaceS $spaceXXL;
+  @include flex(space-between, center);
+  img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain
+  }
+
+  div{
+    @include flex(center, center, $spaceL);
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: $fontS;
+      &:hover {
+        color: $color1;
+      }
+    }
+  }
+}

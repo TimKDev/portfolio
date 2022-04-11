@@ -15,6 +15,11 @@ $spaceL: 54px;
 $spaceXL: 60px;
 $spaceXXL: 105px;
 
+$fontXL: 64px;
+$fontL: 32px;
+$fontM: 18px;
+$fontS: 12px;
+
 
 
 // General Styling:
@@ -23,18 +28,19 @@ html {
   font-family: 'Inter', sans-serif;
   background-color: $color4;
   margin: 0;
+  color: white;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: $fontXL;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: $fontL;
 }
 
 p {
-  font-size: 18px;
+  font-size: $fontM;
 }
 
 .primary-button {
@@ -57,20 +63,45 @@ p {
   cursor: pointer;
   border: solid 1px $color1;
   background-color: transparent;
-  color: $color2;
+  color: $color1;
   &:hover {
     background-color: $color1;
     color: white;
   }
   &:disabled {
     border: none;
-    background-color:  #2dfcd929;
+    background-color:  #fa27583b;
     color: rgba(255, 255, 255, 0.623);
   }
 }
 
 
+.input {
+  border: unset;
+  color: white;
+  background-color: $color3;
+  padding: 8px 12px 8px 12px;
+  &:focus-visible {
+    outline: unset;
+    border: 0.1px solid $color2;
+  }
+  &:disabled {
+    border: 0.1px solid $color1;
+  }
+}
 
+
+// Predefined Mixins:
+
+@mixin flex($justify: center, $align: center, $gap: 0, $directionColomn: false) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+  @if $directionColomn {
+    flex-direction: column;
+  }
+}
 
 
 
