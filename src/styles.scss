@@ -66,10 +66,9 @@ p {
   cursor: pointer;
   border: solid 1px $color1;
   background-color: transparent;
-  color: $color1;
+  color: white;
   &:hover {
     background-color: $color1;
-    color: white;
   }
   &:disabled {
     border: none;

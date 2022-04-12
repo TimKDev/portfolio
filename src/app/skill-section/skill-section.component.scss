@@ -9,8 +9,9 @@
 }
 
 .skills-div {
-  width: 500px;
-  @include flex(center, center, $spaceS);
+  width: 50vw;
+  max-width: 500px;
+  @include flex(center, center, 20px);
   flex-wrap: wrap;
 }
 

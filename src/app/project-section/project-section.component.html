@@ -1,1 +1,33 @@
-<p>project-section works!</p>
+<div class="main-div">
+  <h2>My Work</h2>
+  <div class="button-div">
+    <button (click)="changeSelectedCategory('All')"
+      [class.selected]="selectedCategory == 'All'" 
+      class="secondary-button"
+    >
+      All
+    </button>
+    <button (click)="changeSelectedCategory('Angular')"
+      [class.selected]="selectedCategory == 'Angular'" 
+      class="secondary-button"
+    >
+      Angular
+    </button>
+    <button (click)="changeSelectedCategory('Java Script')"
+      [class.selected]="selectedCategory == 'Java Script'" 
+      class="secondary-button"
+    >
+      Java Script
+    </button>
+  </div>
+  <div class="project-div">
+    <app-project *ngFor="let project of generateSelectedProjects()"
+      [title]="project.title"
+      [imgURL]="project.imgURL"
+      [description]="project.description"
+      [link]="project.link"
+      [category]="project.category"
+    ></app-project>
+  </div>
+  
+</div>

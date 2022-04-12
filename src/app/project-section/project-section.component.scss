@@ -1,0 +1,35 @@
+@use '../../styles.scss' as *;
+
+
+.main-div {
+  height: 75vh;
+  background-color: $color4;
+  padding: $spaceS $spaceXXL $spaceS $spaceXXL;
+  @include flex(center, center, $spaceXL, true);
+  button {
+    width: $spaceXXL;
+    height: $spaceM;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+
+.project-div {
+  width: 70vw;
+  max-width: 700px;
+  @include flex(center, center, $spaceS);
+  flex-wrap: wrap;
+}
+
+
+.selected {
+  background-color: $color1;
+}
+
+
+
+
+
+
+
