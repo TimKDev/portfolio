@@ -1,0 +1,71 @@
+@use '../../styles.scss' as *;
+
+
+.main-div {
+  min-height: 75vh;
+  background-color: $color4;
+  padding: $spaceS $spaceXXL $spaceS $spaceXXL;
+  @include flex(center, center, 0, true);
+  h2{
+    color: $color2;
+    font-size: 50px;
+  }
+}
+
+.main-div-2 {
+  width: 90%;
+  max-width: 1000px;
+  @include flex(center, flex-start, 0, true);
+  a{
+    text-decoration: none;
+    color: $color2;
+  }
+}
+
+form {
+  @include flex(center, flex-start, 0, true);
+  width: 100%;
+  input {
+    width: calc(100% - 24px);
+  }
+  textarea {
+    width: calc(100% - 24px);
+    height: 200px;
+  }
+  div {
+    width: 100%;
+    @include flex(flex-end);
+    button {
+      width: $spaceXXL;
+      height: $spaceM;
+      margin-top: $spaceS;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

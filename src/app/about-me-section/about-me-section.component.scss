@@ -27,7 +27,7 @@
 
 .img-div {
   width: 35vw;
-  @include flex(flex-end);
+  @include flex();
 }
 
 
@@ -41,5 +41,6 @@
 }
 
 .main2 {
-  @include flex(center, center, $spaceL);
+  @include flex(center, center, $spaceM);
+  flex-wrap: wrap;
 }

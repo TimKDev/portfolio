@@ -1,1 +1,20 @@
-<p>contact-me-section works!</p>
+<div class="main-div">
+  <div class="main-div-2">
+
+
+    <h2>Contact me.</h2>
+    <p>Get in touch via the form below or by emailing <a href="#">Tim.Kempkens@googlemail.com</a>.</p>
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+      <p>Name</p>
+      <input class="input" type="text" formControlName="title" placeholder="Enter your name">
+      <p>Email address</p>
+      <input class="input" type="text" formControlName="email" placeholder="Enter your Email address">
+      <p>Message</p>
+      <textarea class="input" type="text" formControlName="description" placeholder="Enter your message">
+      </textarea>
+      <div>
+        <button class="primary-button" type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</div>

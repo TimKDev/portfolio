@@ -1,7 +1,7 @@
 @use '../../styles.scss' as *; 
 
 .main-div {
-  width: 200px;
+  width: 175px;
   min-height: 20vh;
   @include flex(center, center, 0, true);
   margin-top: $spaceXL;
