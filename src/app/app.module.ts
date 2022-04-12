@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { SkillComponent } from './skill/skill.component';
 import { ProjectComponent } from './project/project.component';
 import { StoryComponent } from './story/story.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { StoryComponent } from './story/story.component';
     HeaderComponent,
     SkillComponent,
     ProjectComponent,
-    StoryComponent
+    StoryComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

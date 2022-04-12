@@ -2,7 +2,7 @@
 
 .container {
   @include flex(space-between, center);
-  padding: $spaceS $spaceXXL $spaceS $spaceXXL;
+  padding: $spaceL $spaceXXL $spaceL $spaceXXL;
   img{
     width: 25px;
     height: 25px;

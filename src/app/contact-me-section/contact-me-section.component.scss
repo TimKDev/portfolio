@@ -2,9 +2,9 @@
 
 
 .main-div {
-  min-height: 75vh;
+  min-height: 100vh;
   background-color: $color4;
-  padding: $spaceS $spaceXXL $spaceS $spaceXXL;
+  padding: $spaceL $spaceXXL $spaceL $spaceXXL;
   @include flex(center, center, 0, true);
   h2{
     color: $color2;
@@ -31,6 +31,7 @@ form {
   textarea {
     width: calc(100% - 24px);
     height: 200px;
+    resize: none;
   }
   div {
     width: 100%;

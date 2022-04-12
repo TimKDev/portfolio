@@ -2,9 +2,9 @@
 
 
 .main-div {
-  min-height: 75vh;
+  min-height: 100vh;
   background-color: $color3;
-  padding: $spaceS $spaceXXL $spaceS $spaceXXL;
+  padding: $spaceL $spaceXXL $spaceL $spaceXXL;
   @include flex(center, center, $spaceXL, true);
 }
 

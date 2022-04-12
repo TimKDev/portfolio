@@ -2,12 +2,12 @@
 
 .main-div {
   width: 100%;
-  min-height: 75vh;
+  min-height: 100vh;
 }
 
 .container-1 {
   @include flex(space-between);
-  padding: $spaceS $spaceXXL $spaceS $spaceXXL;
+  padding: $spaceL $spaceXXL $spaceL $spaceXXL;
 }
 
 button {

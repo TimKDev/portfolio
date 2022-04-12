@@ -1,0 +1,37 @@
+@use '../../styles.scss' as *;
+
+
+.main-div {
+  min-height: 30px;
+  background-color: white;
+  padding: $spaceL $spaceXXL $spaceL $spaceXXL;
+  @include flex(space-between);
+  span{
+    color: grey;
+    font-size: $fontS;
+  }
+  img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-left: $spaceM;
+    margin-right: $spaceM;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
