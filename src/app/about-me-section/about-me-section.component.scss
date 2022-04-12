@@ -1,0 +1,45 @@
+@use '../../styles.scss' as *; 
+
+.main-div {
+  min-height: 75vh;
+  background-color: $color3;
+  @include flex(center, center, 0, true);
+  padding: $spaceS $spaceXXL $spaceS $spaceXXL;
+}
+
+.main1 {
+  @include flex(space-around, center, $spaceXXL);
+  width: 70vw;
+  border-bottom: 3px solid $color2;
+  padding-bottom: $spaceM;
+  padding-right: $spaceL;
+  padding-left: $spaceL;
+}
+
+.quote {
+  width: 35vw;
+  font-size: $fontXS;
+  @include flex(center, center, 0, true);
+  span {
+    text-align: center;
+  }
+}
+
+.img-div {
+  width: 35vw;
+  @include flex(flex-end);
+}
+
+
+.my-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  // background-image: url("assets/img/myImage.jpg");
+  background-color: $color1;
+  margin-top: $spaceL;
+}
+
+.main2 {
+  @include flex(center, center, $spaceL);
+}

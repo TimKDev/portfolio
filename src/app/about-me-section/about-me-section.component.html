@@ -1,1 +1,19 @@
-<p>about-me-section works!</p>
+<div class="main-div">
+  <div class="main1">
+    <div class="img-div">
+      <div class="my-image"></div>
+    </div>
+    <div class="quote">
+      <h2>About me.</h2>
+      <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, aspernatur. Autem in temporibus excepturi quasi cupiditate cum beatae veritatis.</span>
+    </div>
+  </div>
+  <div class="main2">
+    <app-story *ngFor="let story of stories"
+      [title]="story.title"
+      [description]="story.description"
+      [imgURL]="story.imgURL">
+    </app-story>
+  </div>
+
+</div>
