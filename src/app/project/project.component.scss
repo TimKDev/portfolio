@@ -1,13 +1,13 @@
 @use '../../styles.scss'as *;
 
 .main-div {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   position: relative;
 
   img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     top: 0;
     left: 0;
@@ -22,8 +22,8 @@
 }
 
 .info {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   top: 0;
   left: 0;
@@ -32,10 +32,10 @@
   z-index: 3;
   background-color: rgba(255, 255, 255, 0.85);
   color: black;
-  font-size: $fontS;
+  font-size: $fontXS;
   button {
-    width: $spaceXXL;
-    height: $spaceM;
+    width: 140px;
+    height: $spaceXL;
     color: $color1;
     background-color: white;
     margin-top: $spaceM;
@@ -48,5 +48,5 @@
 
 .pink-font {
   color: $color1;
-  font-size: $fontM;
+  font-size: $fontL;
 }

@@ -1,20 +1,20 @@
 <div class="main-div">
-  <h2>My Work</h2>
+  <span>My Work</span>
   <div class="button-div">
     <button (click)="changeSelectedCategory('All')"
       [class.selected]="selectedCategory == 'All'" 
       class="secondary-button">
-      All
+      <p>All</p>
     </button>
     <button (click)="changeSelectedCategory('Angular')"
       [class.selected]="selectedCategory == 'Angular'" 
       class="secondary-button">
-      Angular
+      <p>Angular</p>
     </button>
     <button (click)="changeSelectedCategory('Java Script')"
       [class.selected]="selectedCategory == 'Java Script'" 
       class="secondary-button">
-      Java Script
+      <p>Java Script</p>
     </button>
   </div>
   <div class="project-div">

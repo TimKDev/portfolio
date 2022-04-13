@@ -2,15 +2,18 @@
 
 
 .main-div {
-  min-height: 100vh;
+  min-height: calc(100vh - 2*$spaceL);
   background-color: $color3;
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;
   @include flex(center, center, $spaceXL, true);
+  span {
+    font-size: 45px;
+  }
 }
 
 .skills-div {
   width: 50vw;
-  max-width: 500px;
+  max-width: 1000px;
   @include flex(center, center, 20px);
   flex-wrap: wrap;
 }

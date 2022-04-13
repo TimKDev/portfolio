@@ -1,14 +1,14 @@
 @use '../../styles.scss' as *; 
 
 .main-div {
-  min-height: 100vh;
+  min-height: calc(100vh - 2*$spaceL);
   background-color: $color3;
   @include flex(center, center, 0, true);
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;
 }
 
 .main1 {
-  @include flex(space-around, center, $spaceXXL);
+  @include flex(space-around, center);
   width: 70vw;
   border-bottom: 3px solid $color2;
   padding-bottom: $spaceM;
@@ -18,10 +18,13 @@
 
 .quote {
   width: 35vw;
-  font-size: $fontXS;
+  font-size: $fontM;
   @include flex(center, center, 0, true);
   span {
     text-align: center;
+  }
+  h2 {
+    font-size: 45px;
   }
 }
 
@@ -32,8 +35,8 @@
 
 
 .my-image {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 100%;
   // background-image: url("assets/img/myImage.jpg");
   background-color: $color1;
@@ -41,6 +44,6 @@
 }
 
 .main2 {
-  @include flex(center, center, $spaceM);
+  @include flex(center, center, $spaceXXL);
   flex-wrap: wrap;
 }

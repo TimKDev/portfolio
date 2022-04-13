@@ -2,21 +2,24 @@
 
 
 .main-div {
-  height: 100vh;
+  height: calc(100vh - 2*$spaceL);
   background-color: $color4;
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;
   @include flex(center, center, $spaceXL, true);
   button {
-    width: $spaceXXL;
-    height: $spaceM;
+    width: 140px;
+    height: $spaceXL;
     margin-left: 2px;
     margin-right: 2px;
+  }
+  span {
+    font-size: 45px;
   }
 }
 
 
 .project-div {
-  width: 70vw;
+  width: 40vw;
   max-width: 700px;
   @include flex(center, center, $spaceS);
   flex-wrap: wrap;

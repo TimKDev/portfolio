@@ -2,7 +2,7 @@
 
 
 .main-div {
-  min-height: 100vh;
+  min-height: calc(100vh - 2*$spaceL);
   background-color: $color4;
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;
   @include flex(center, center, 0, true);
@@ -37,8 +37,9 @@ form {
     width: 100%;
     @include flex(flex-end);
     button {
-      width: $spaceXXL;
-      height: $spaceM;
+      width: 140px;
+      height: 60px;
+      font-size: $fontM;
       margin-top: $spaceS;
     }
   }
