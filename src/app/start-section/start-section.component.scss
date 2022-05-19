@@ -25,11 +25,12 @@ button {
 }
 
 .my-image {
-  width: 400px;
-  height: 400px;
-  border-radius: 100%;
+  width: 300px;
+  // height: 400px;
+  border-radius: 20px!important;
+  object-fit: contain;
   // background-image: url("assets/img/myImage.jpg");
-  background-color: $color1;
+  // background-color: $color1;
   margin-top: $spaceL;
 }
 

@@ -1,4 +1,4 @@
-<div class="main-div">
+<div class="main-div" id="projects">
   <span>My Work</span>
   <div class="button-div">
     <button (click)="changeSelectedCategory('All')"
@@ -23,6 +23,7 @@
       [imgURL]="project.imgURL"
       [description]="project.description"
       [link]="project.link"
+      [linkGit]="project.linkGit"
       [category]="project.category"
     ></app-project>
   </div>

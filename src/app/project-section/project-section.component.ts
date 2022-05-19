@@ -10,32 +10,36 @@ export class ProjectSectionComponent implements OnInit {
   projects = [
     {
       title: 'El Pollo Loco',
-      imgURL: './assets/img/computer.jpg',
-      description: 'Java Skript based jump and run game',
-      link: 'https://google.de',
+      imgURL: './assets/img/ElPolloPoco.png',
+      description: 'Java Script based jump and run game.',
+      link: 'https://tim-kempkens.developerakademie.net/MyElPolloLoco/',
+      linkGit: 'https://github.com/TimKDev/MyElPolloLoco',
       category: 'Java Script',
     },
     {
-      title: 'El Pollo Loco2',
-      imgURL: './assets/img/computer.jpg',
-      description: 'Java Skript based jump and run game',
-      link: 'https://google.de',
-      category: 'Java Script',
-    },
-    {
-      title: 'El Pollo Loco3',
-      imgURL: './assets/img/computer.jpg',
-      description: 'Java Skript based jump and run game',
-      link: 'https://google.de',
+      title: 'Ring of Fire',
+      imgURL: './assets/img/ringoffire.png',
+      description: 'Corona version of a popular party game. ',
+      link: 'https://ring-of-fire-bc921.web.app/',
+      linkGit: 'https://github.com/TimKDev/ringoffire',
       category: 'Angular',
     },
     {
-      title: 'El Pollo Loco4',
-      imgURL: './assets/img/computer.jpg',
-      description: 'Java Skript based jump and run game',
-      link: 'https://google.de',
+      title: 'Simple CRM',
+      imgURL: './assets/img/crm.png',
+      description: 'Simple buissness app build with Angular.',
+      link: 'https://simple-crm-af2fd.web.app',
+      linkGit: 'https://github.com/TimKDev/simple-crm',
       category: 'Angular',
     }
+    // {
+    //   title: 'El Pollo Loco4',
+    //   imgURL: './assets/img/computer.jpg',
+    //   description: 'Java Skript based jump and run game',
+    //   link: 'https://google.de',
+    //   linkGit: 'https://google.de',
+    //   category: 'Angular',
+    // }
   ];
 
   selectedCategory = 'All';
@@ -52,15 +56,6 @@ export class ProjectSectionComponent implements OnInit {
     });
     return result;
   }
-
-  // generateSelectedProjects(projects:any, selectedCategory:string) {
-  //   let result: any = [];
-  //   projects.forEach((element:any) => {
-  //     if (selectedCategory != 'All' && element.category != selectedCategory) return;
-  //     result.push(element);
-  //   });
-  //   return result;
-  // }
 
 
   constructor() { }

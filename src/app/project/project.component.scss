@@ -34,11 +34,17 @@
   color: black;
   font-size: $fontXS;
   button {
-    width: 140px;
+    width: 120px;
     height: $spaceXL;
     color: $color1;
     background-color: white;
     margin-top: $spaceM;
+    &:first-of-type {
+      margin-right: 10px;
+    }
+    &:last-of-type {
+      margin-left: 10px;
+    }
     a {
       text-decoration: none;
       color: $color1;

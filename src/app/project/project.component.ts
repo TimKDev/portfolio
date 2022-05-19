@@ -11,6 +11,7 @@ export class ProjectComponent implements OnInit {
   @Input() imgURL!: string;
   @Input() description!: string;
   @Input() link!: string;
+  @Input() linkGit!: string;
   @Input() category!: string;
 
 
