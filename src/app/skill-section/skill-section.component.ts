@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+declare let AOS: any;
 @Component({
   selector: 'app-skill-section',
   templateUrl: './skill-section.component.html',
@@ -18,12 +19,15 @@ export class SkillSectionComponent implements OnInit {
     {imgURL: './assets/icons/design.png', text: 'Design Thinking'},
     {imgURL: './assets/icons/api.png', text: 'Rest API'},
     {imgURL: './assets/icons/test.png', text: 'Test Automation'},
-    {imgURL: './assets/icons/database.png', text: 'Databases'},
+    {imgURL: './assets/icons/python.png', text: 'Databases'},
   ];
 
-  constructor() { }
+  constructor() { 
+    console.log(AOS);
+  }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }

@@ -1,9 +1,94 @@
 <div class="main-div" id="skills">
   <span>My Skills</span>
   <div class="skills-div">
-    <app-skill *ngFor="let skill of skills"
-      [imgURL] = "skill.imgURL" 
-      [text]="skill.text"> 
+    <app-skill
+      data-aos="fade-down-right"
+      data-aos-offset="0"
+      data-aos-delay="0"
+      data-aos-duration="400"
+      data-aos-easing="ease-in-out"
+      [imgURL] = "'./assets/icons/js.png'" 
+      [text]="'Java Script'"> 
+    </app-skill>
+
+    <app-skill 
+      data-aos="fade-down-right"
+      data-aos-offset="100"
+      data-aos-delay="0"
+      data-aos-duration="400"
+      data-aos-easing="ease-in-out"
+      [imgURL] = "'./assets/icons/angular.png'" 
+      [text]="'Angular'"> 
+    </app-skill>
+
+    <app-skill 
+      data-aos="fade-down-right"
+      data-aos-offset="200"
+      data-aos-delay="0"
+      data-aos-duration="400"
+      data-aos-easing="ease-in-out"
+      [imgURL] = "'./assets/icons/html.png'" 
+      [text]="'HTML / CSS'"> 
+    </app-skill>
+
+    <app-skill 
+      data-aos="fade-down-left"
+      data-aos-offset="0"
+      data-aos-delay="0"
+      data-aos-duration="400"
+      data-aos-easing="ease-in-out"
+      [imgURL] = "'./assets/icons/scrum.png'" 
+      [text]="'SCRUM'"> 
+    </app-skill>
+
+    <app-skill
+      data-aos="fade-down-left"
+      data-aos-offset="100"
+      data-aos-delay="0"
+      data-aos-duration="400"
+      data-aos-easing="ease-in-out"
+      [imgURL] = "'./assets/icons/git.png'" 
+      [text]="'Git'"> 
+    </app-skill>
+
+    <app-skill 
+      data-aos="fade-down-left"
+      data-aos-offset="200"
+      data-aos-delay="0"
+      data-aos-duration="400"
+      data-aos-easing="ease-in-out"
+      [imgURL] = "'./assets/icons/design.png'" 
+      [text]="'Design Thinking'"> 
+    </app-skill>
+
+    <app-skill 
+      data-aos="fade-down-right"
+      data-aos-offset="0"
+      data-aos-delay="0"
+      data-aos-duration="400"
+      data-aos-easing="ease-in-out"
+      [imgURL] = "'./assets/icons/api.png'" 
+      [text]="'Rest API'"> 
+    </app-skill>
+
+    <app-skill 
+      data-aos="fade-down-right"
+      data-aos-offset="100"
+      data-aos-delay="0"
+      data-aos-duration="400"
+      data-aos-easing="ease-in-out"
+      [imgURL] = "'./assets/icons/test.png'" 
+      [text]="'Test Automation'"> 
+    </app-skill>
+
+    <app-skill 
+      data-aos="fade-down-right"
+      data-aos-offset="200"
+      data-aos-delay="0"
+      data-aos-duration="400"
+      data-aos-easing="ease-in-out"
+      [imgURL] = "'./assets/icons/python.png'" 
+      [text]="'Python'"> 
     </app-skill>
   </div>
 </div>
