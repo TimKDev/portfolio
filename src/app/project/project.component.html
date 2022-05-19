@@ -1,9 +1,9 @@
-<div class="main-div">
+<div class="main-div" (click)="btnActiv=true" (mouseover)="btnActiv=true">
   <img [src]="imgURL">
   <div class="info">
     <b class="pink-font">{{title}}</b><br>
     <span>{{description}}</span>
-    <div>
+    <div *ngIf="btnActiv">
       <a [href]="link" target="_blank"><button class="secondary-button">Try out</button></a>
       <a [href]="linkGit" target="_blank"><button class="secondary-button">Github</button></a>
     </div>

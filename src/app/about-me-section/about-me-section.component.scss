@@ -9,11 +9,10 @@
 
 .main1 {
   @include flex(space-around, center);
-  width: 70vw;
   border-bottom: 3px solid $color2;
   padding-bottom: $spaceM;
-  padding-right: $spaceL;
-  padding-left: $spaceL;
+  padding-right: $spaceXXL;
+  padding-left: $spaceXXL;
 }
 
 .quote {

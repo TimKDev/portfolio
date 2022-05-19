@@ -13,7 +13,7 @@ export class ProjectComponent implements OnInit {
   @Input() link!: string;
   @Input() linkGit!: string;
   @Input() category!: string;
-
+  btnActiv = false;
 
   constructor() { }
 
