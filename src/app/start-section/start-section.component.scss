@@ -55,3 +55,22 @@ button {
     object-fit: contain;
   }
 }
+
+@media(max-width: 900px){
+  .container-1 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .center-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}

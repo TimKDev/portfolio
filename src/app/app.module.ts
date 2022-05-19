@@ -14,6 +14,9 @@ import { SkillComponent } from './skill/skill.component';
 import { ProjectComponent } from './project/project.component';
 import { StoryComponent } from './story/story.component';
 import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { FooterComponent } from './footer/footer.component';
     SkillComponent,
     ProjectComponent,
     StoryComponent,
-    FooterComponent
+    FooterComponent,
+    ImprintComponent,
+    LegalNoticeComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

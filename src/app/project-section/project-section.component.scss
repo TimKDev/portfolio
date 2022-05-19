@@ -30,9 +30,18 @@
   background-color: $color1;
 }
 
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-
-
+@media(max-width: 750px){
+  .main-div {
+    padding: 54px 0 54px 0;
+  }
+}
 
 
 
