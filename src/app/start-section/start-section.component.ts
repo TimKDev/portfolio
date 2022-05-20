@@ -44,9 +44,15 @@ export class StartSectionComponent implements AfterViewInit, OnInit {
       this.mouse.y = event.y + window.scrollY;
       for(let i = 0; i < 20; i++){
         this.particleArray.push(new Particle(this.mouse, this.hue));
-      }
-      console.log(this.particleArray);
-      
+      }      
+    });
+
+    this.startSection.nativeElement.addEventListener('touchmove', (event: any) => {
+      this.mouse.x = event.x;
+      this.mouse.y = event.y + window.scrollY;
+      for(let i = 0; i < 20; i++){
+        this.particleArray.push(new Particle(this.mouse, this.hue));
+      }      
     });
 
     // Erzeuge Particles durch Mousemove:

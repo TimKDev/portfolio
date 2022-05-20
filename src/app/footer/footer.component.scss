@@ -14,14 +14,19 @@
     width: 30px;
     height: 30px;
     object-fit: contain;
-    margin-left: $spaceM;
-    margin-right: $spaceM;
+    margin-left: $spaceS;
+    margin-right: $spaceS;
+  }
+  a {
+    color: grey;
+    text-decoration: none;
+
   }
 }
 
 @media(max-width: 750px){
   .main-div {
-    padding: 10px;
+    padding: $spaceL $spaceM $spaceL $spaceM;
   }
 }
 
