@@ -6,6 +6,7 @@
   background-color: $color3;
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;
   @include flex(center, center, $spaceXL, true);
+  overflow: hidden;
   span {
     font-size: 45px;
   }
@@ -24,9 +25,9 @@
 }
 
 
-@media(max-width: 850px){
+@media(max-width: 900px){
   .main-div {
-    padding: 54px 0 54px 0;
+    padding: $spaceM $spaceS $spaceM $spaceS;
   }
 }
 

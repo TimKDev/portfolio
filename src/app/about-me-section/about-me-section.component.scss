@@ -5,6 +5,7 @@
   background-color: $color3;
   @include flex(center, center, 0, true);
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;
+  overflow: hidden;
 }
 
 .main1 {
@@ -50,6 +51,9 @@
 
 
 @media(max-width: 900px){
+  .main-div {
+    padding: $spaceM $spaceS $spaceM $spaceS;
+  }
   .main1 {
     flex-direction: column;
     justify-content: center;

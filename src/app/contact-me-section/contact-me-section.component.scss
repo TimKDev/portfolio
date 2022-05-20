@@ -5,6 +5,7 @@
   min-height: calc(100vh - 2*$spaceL);
   background-color: $color4;
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;
+  overflow: hidden;
   @include flex(center, center, 0, true);
   h2{
     color: $color2;
@@ -42,6 +43,12 @@ form {
       font-size: $fontM;
       margin-top: $spaceS;
     }
+  }
+}
+
+@media(max-width: 900px){
+  .main-div {
+    padding: $spaceM $spaceS $spaceM $spaceS;
   }
 }
 

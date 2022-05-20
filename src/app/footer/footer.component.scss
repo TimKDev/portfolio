@@ -5,6 +5,7 @@
   min-height: 30px;
   background-color: white;
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;
+  overflow: hidden;
   @include flex(space-between);
   span{
     color: grey;
@@ -24,9 +25,9 @@
   }
 }
 
-@media(max-width: 750px){
+@media(max-width: 900px){
   .main-div {
-    padding: $spaceL $spaceM $spaceL $spaceM;
+    padding: $spaceM $spaceS $spaceM $spaceS;
   }
 }
 

@@ -2,8 +2,9 @@
 
 .main-div {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 2*$spaceL);
   position: relative;
+  overflow: hidden;
 }
 
 #canvas {
@@ -69,10 +70,24 @@ button {
 }
 
 @media(max-width: 900px){
+  .main-div {
+    width: calc(100% - 2*$spaceS);
+    padding: $spaceM $spaceS $spaceM $spaceS;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .my-image {
+    width: 250px;
+  }
+
   .container-1 {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
 
   .center-mobile {
@@ -85,4 +100,19 @@ button {
   .hide-mobile {
     display: none;
   }
+}
+
+@media(max-width: 600px){
+  .my-image{
+    width: 200px
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+
+@media(max-width: 400px){
+  
 }

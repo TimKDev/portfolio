@@ -1,10 +1,10 @@
 @use '../../styles.scss' as *;
 
-
 .main-div {
   min-height: calc(100vh - 2*$spaceL);
   background-color: $color4;
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;
+  overflow: hidden;
   @include flex(center, center, $spaceXL, true);
   button {
     width: 140px;
@@ -37,9 +37,9 @@
   flex-wrap: wrap;
 }
 
-@media(max-width: 750px){
+@media(max-width: 900px){
   .main-div {
-    padding: 54px 0 54px 0;
+    padding: $spaceM $spaceS $spaceM $spaceS;
   }
 }
 
