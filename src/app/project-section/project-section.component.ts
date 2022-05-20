@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+declare let AOS: any;
 @Component({
   selector: 'app-project-section',
   templateUrl: './project-section.component.html',
@@ -19,7 +20,7 @@ export class ProjectSectionComponent implements OnInit {
     {
       title: 'Ring of Fire',
       imgURL: './assets/img/ringoffire.png',
-      description: 'Corona version of a popular party game. ',
+      description: 'Corona version of a popular party game.',
       link: 'https://ring-of-fire-bc921.web.app/',
       linkGit: 'https://github.com/TimKDev/ringoffire',
       category: 'Angular',
@@ -58,9 +59,12 @@ export class ProjectSectionComponent implements OnInit {
   }
 
 
-  constructor() { }
+  constructor() { 
+    console.log(AOS);
+  }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }
