@@ -16,7 +16,10 @@
 }
 
 .container-1 {
-  @include flex(space-between);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;
 }
 

@@ -28,7 +28,7 @@
   top: 0;
   left: 0;
   @include flex(center, center, 0, true);
-  display: none;
+  display: flex;
   z-index: 3;
   background-color: rgba(255, 255, 255, 0.85);
   color: black;

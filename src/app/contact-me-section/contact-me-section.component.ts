@@ -1,14 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 
+declare let AOS: any;
 @Component({
   selector: 'app-contact-me-section',
   templateUrl: './contact-me-section.component.html',
   styleUrls: ['./contact-me-section.component.scss']
 })
-export class ContactMeSectionComponent {
+export class ContactMeSectionComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder) { 
+    console.log(AOS);
+  }
 
   checkoutForm = this.formBuilder.group({
     title: '',
@@ -21,6 +24,10 @@ export class ContactMeSectionComponent {
   onSubmit(): void {
     console.log('Email was sent with ', this.checkoutForm.value);
     this.checkoutForm.reset();
+  }
+
+  ngOnInit(): void {
+    AOS.init();
   }
 
 

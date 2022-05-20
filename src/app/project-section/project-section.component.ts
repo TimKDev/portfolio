@@ -8,6 +8,8 @@ declare let AOS: any;
 })
 export class ProjectSectionComponent implements OnInit {
 
+  btnActiv: boolean = false;
+
   projects = [
     {
       title: 'El Pollo Loco',

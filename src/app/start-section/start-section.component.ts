@@ -1,12 +1,13 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { handleParticles, paintWithResize, Particle } from 'src/myModules/particles'
 
+declare let AOS: any;
 @Component({
   selector: 'app-start-section',
   templateUrl: './start-section.component.html',
   styleUrls: ['./start-section.component.scss']
 })
-export class StartSectionComponent implements AfterViewInit {
+export class StartSectionComponent implements AfterViewInit, OnInit {
   // Verwende immer besser den @ViewChild Dekorator statt document.getElementById(...)
   // oder ähnliches:
   @ViewChild('myCanvas') canvas!: ElementRef<HTMLCanvasElement>;
@@ -21,7 +22,13 @@ export class StartSectionComponent implements AfterViewInit {
     y: undefined
   }
 
-  constructor() { }
+  constructor() { 
+    console.log(AOS);
+  }
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 
   ngAfterViewInit(): void {
     paintWithResize(this.canvas.nativeElement);

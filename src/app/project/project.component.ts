@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-project',
@@ -6,6 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {
+
+  @ViewChild('main') main: any;
 
   @Input() title!: string;
   @Input() imgURL!: string;
@@ -18,6 +20,8 @@ export class ProjectComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.addEventListener('mouseover', () => {this.btnActiv = false;})
+    // this.main.nativeElement.addEventListener('mouseover', ()=>)
   }
 
 }
