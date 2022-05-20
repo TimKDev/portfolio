@@ -34,7 +34,7 @@ export class StartSectionComponent implements AfterViewInit {
     // bekommen würde:
     this.startSection.nativeElement.addEventListener('click', (event: any) => {
       this.mouse.x = event.x;
-      this.mouse.y = event.y;
+      this.mouse.y = event.y + window.scrollY;
       for(let i = 0; i < 20; i++){
         this.particleArray.push(new Particle(this.mouse, this.hue));
       }
@@ -45,7 +45,7 @@ export class StartSectionComponent implements AfterViewInit {
     // Erzeuge Particles durch Mousemove:
     this.startSection.nativeElement.addEventListener('mousemove', (event: any) => {
       this.mouse.x = event.x;
-      this.mouse.y = event.y;
+      this.mouse.y = event.y + window.scrollY;
       for(let i = 0; i < 2; i++){
         this.particleArray.push(new Particle(this.mouse, this.hue));
       }
