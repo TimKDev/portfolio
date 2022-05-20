@@ -1,7 +1,7 @@
 @use '../../styles.scss' as *; 
 
 .main-div {
-  min-height: calc(100vh - 2*$spaceL);
+  min-height: 100vh;
   background-color: $color3;
   @include flex(center, center, 0, true);
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;

@@ -2,7 +2,7 @@
 
 
 .main-div {
-  min-height: calc(100vh - 2*$spaceL);
+  min-height: 100vh;
   background-color: $color3;
   padding: $spaceL $spaceXXL $spaceL $spaceXXL;
   @include flex(center, center, $spaceXL, true);

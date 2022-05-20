@@ -2,7 +2,7 @@
 
 .main-div {
   width: 100%;
-  min-height: calc(100vh - 2*$spaceL);
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -114,5 +114,5 @@ button {
 
 
 @media(max-width: 400px){
-  
+
 }
