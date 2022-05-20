@@ -15,13 +15,10 @@ export class ProjectComponent implements OnInit {
   @Input() link!: string;
   @Input() linkGit!: string;
   @Input() category!: string;
-  btnActiv = false;
 
   constructor() { }
 
   ngOnInit(): void {
-    window.addEventListener('mouseover', () => {this.btnActiv = false;})
-    // this.main.nativeElement.addEventListener('mouseover', ()=>)
   }
 
 }
