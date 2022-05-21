@@ -59,20 +59,13 @@ form {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 400px) {
+  .main-div-2 {
+    p {
+      width: 230px;
+    }
+  }
+}
 
 
 

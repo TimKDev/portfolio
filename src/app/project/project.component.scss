@@ -59,7 +59,40 @@
   font-size: $fontL;
 }
 
-@media(max-width: 300px){
+@media(max-width: 350px){
+  .main-div {
+    width: 250px;
+    height: 250px;
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  
+
+  .info {
+    width: 250px;
+    height: 250px;
+
+    span {
+      width: 200px;
+    }
+
+    button {
+      width: 100px;
+      height: $spaceL;
+      color: $color1;
+      background-color: white;
+      margin-top: $spaceM;
+      &:first-of-type {
+        margin-right: 10px;
+      }
+      &:last-of-type {
+        margin-left: 10px;
+      }
+    }
+  }
   
 }
 

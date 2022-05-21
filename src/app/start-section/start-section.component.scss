@@ -113,6 +113,13 @@ button {
 }
 
 
-@media(max-width: 400px){
+@media(max-width: 350px){
+  .primary-button {
+    width: 200px;
+  }
 
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
 }
